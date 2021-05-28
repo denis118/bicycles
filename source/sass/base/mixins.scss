@@ -1,0 +1,45 @@
+@mixin outline($color) {
+  outline: 1px dashed $color;
+  outline-offset: -1px;
+}
+
+//-------------------------------
+
+@mixin column-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin centering-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centering-grid {
+  display: grid;
+  place-items: center;
+}
+
+@mixin all-columns {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+@mixin one-track {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+@mixin shift-to-left($value) {
+  margin-left: $value;
+  margin-right: 0;
+}
+
+@mixin shift-to-right($value) {
+  margin-right: $value;
+  margin-left: 0;
+}

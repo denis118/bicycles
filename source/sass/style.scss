@@ -1,0 +1,24 @@
+@import "./base/fonts.scss";
+@import "./base/vars.scss";
+@import "./base/base.scss";
+
+// navigation
+@import "./blocks/navigation.scss";
+
+// general-block
+@import "./blocks/general-block.scss";
+
+// about
+@import "./blocks/about.scss";
+
+// bicycles-types
+@import "./blocks/bicycles-types.scss";
+
+// bicycles-video
+@import "./blocks/bicycles-video.scss";
+
+// contacts
+@import "./blocks/contacts.scss";
+
+// hidden-entities
+@import "./base/hidden-entities.scss";

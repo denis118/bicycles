@@ -1,0 +1,9 @@
+.hidden-entity {
+  display: none;
+}
+
+.hidden-on-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

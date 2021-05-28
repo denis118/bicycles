@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:
+    "OpenSans",
+    "Arial",
+    sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    min-content,
+    1fr,
+    min-content;
+
+  min-height: 100vh;
+  background-color: $lcg-1;
+}

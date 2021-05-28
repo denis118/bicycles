@@ -1,0 +1,51 @@
+// OpenSans regular
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("OpenSans"),
+    local("opensans-regular"),
+    url("../fonts/openSans-regular.woff2") format("woff2"),
+    url("../fonts/openSans-regular.woff") format("woff");
+  font-display: swap;
+}
+
+// OpenSans light
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("OpenSans"),
+    local("opensans-light"),
+    url("../fonts/openSans-light.woff2") format("woff2"),
+    url("../fonts/openSans-light.woff") format("woff");
+  font-display: swap;
+}
+
+// OpenSans semibold
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("OpenSans"),
+    local("opensans-semibold"),
+    url("../fonts/openSans-semiBold.woff2") format("woff2"),
+    url("../fonts/openSans-semiBold.woff") format("woff");
+  font-display: swap;
+}
+
+// OpenSans bold
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("OpenSans"),
+    local("opensans-bold"),
+    url("../fonts/openSans-bold.woff2") format("woff2"),
+    url("../fonts/openSans-bold.woff") format("woff");
+  font-display: swap;
+}
