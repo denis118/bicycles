@@ -1,7 +1,6 @@
 .navigation {
-  position: absolute;
-
   @media (min-width: $desktop-width) {
+    position: absolute;
     top: 0;
     left: 50%;
     width: 60.6597%;
@@ -9,6 +8,30 @@
     transform: translateX(-50%);
     background-color: transparent;
     border-bottom: 1px solid $lcg-2;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    position: static;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 138px;
+    background-color: $lcg-1;
+    border-bottom: none;
+  }
+
+  &--js {
+    @include absolute-top-right;
+    width: min-content;
+    height: min-content;
+  }
+
+  &--opened {
+    @media (max-width: $pre-desktop-width) {
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: 100vh;
+    }
   }
 }
 
@@ -22,6 +45,10 @@
   @media (min-width: $desktop-width) {
     padding: 21px 21px 9px 19px;
   }
+
+  @media (max-width: $pre-desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .navigation__item {
@@ -29,6 +56,15 @@
     @media (min-width: $desktop-width) {
       margin-right: auto;
     }
+
+    @media (max-width: $pre-desktop-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    margin-right: 0;
+    background-color: $dcg-5;
   }
 }
 
@@ -45,10 +81,58 @@
     opacity: 0.7;
   }
 
+  @media (max-width: $pre-desktop-width) {
+    font-size: 20px;
+    line-height: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 23px 17px 16px;
+
+    color: $dcg-4;
+    opacity: 1;
+  }
+
+  &::after {
+    @media (max-width: $pre-desktop-width) {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 12px;
+      background-image: $arrow-right;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
   &:hover,
   &:focus {
     @media (min-width: $desktop-width) {
       opacity: 1;
     }
+
+    @media (max-width: $pre-desktop-width) {
+      color: $dcg-1;
+    }
   }
+}
+
+.navigation__toggle {
+  @media (max-width: $pre-desktop-width) {
+    @include absolute-top-right;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background-color: $mcg-1;
+  }
+
+  &--cross {
+    @media (max-width: $pre-desktop-width) {
+      background-color: transparent;
+    }
+  }
+
+  @include button-hover-focus;
 }

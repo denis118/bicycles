@@ -70,3 +70,16 @@
   margin-right: $value;
   margin-left: 0;
 }
+
+@mixin button-hover-focus {
+  &:hover,
+  &:focus {
+    background-color: $mcg-2;
+  }
+}
+
+@mixin absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

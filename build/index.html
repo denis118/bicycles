@@ -12,8 +12,21 @@
 
 <body>
   <header>
-    <nav class="navigation">
-      <ul class="navigation__list">
+    <nav class="navigation navigation--js">
+      <button class="navigation__toggle hidden-on-desktop" type="button">
+
+        <span class="visually-hidden hidden-entity">Кнопка открытия меню навигации</span>
+        <svg class="navigation__toggle-svg navigation__burger-svg " width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <use xlink:href="#icon-burger"></use>
+        </svg>
+
+        <span class="visually-hidden hidden-entity">Кнопка закрытия меню навигации</span>
+        <svg class="navigation__toggle-svg navigation__cross-svg hidden-entity" width="24" height="25" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" id="cross-in-nav-svg">
+          <use xlink:href="#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="navigation__list hidden-entity">
         <li class="navigation__item">
           <a class="navigation__link" href="#about" aria-label="Ссылка для перехода к разделу 'О нас'">О нас</a>
         </li>
@@ -27,23 +40,14 @@
           <a class="navigation__link" href="#contacts" aria-label="Ссылка для перехода к разделу 'Контакты'">Контакты</a>
         </li>
       </ul>
-
-      <button class="navigation__toggle hidden-on-desktop hidden-entity" type="button">
-
-        <span class="visually-hidden hidden-entity">Кнопка открытия меню навигации</span>
-        <svg class="navigation__toggle-svg navigation__burger-svg hidden-entity" width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-
-        <span class="visually-hidden hidden-entity">Кнопка закрытия меню навигации</span>
-        <svg class="navigation__toggle-svg navigation__cross-svg hidden-entity" width="24" height="25" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" id="cross-in-nav-svg">
-          <use xlink:href="#icon-cross"></use>
-        </svg>
-      </button>
     </nav>
 
     <section class="general-block">
       <h1 class="visually-hidden">Велосипеды</h1>
+
+      <div class="general-block__wrapper">
+
+      </div>
 
       <a class="general-block__logo">
         <svg class="general-block__logo-svg" width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
