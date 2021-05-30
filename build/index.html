@@ -12,11 +12,11 @@
 
 <body>
   <header>
-    <nav class="navigation navigation--js">
-      <button class="navigation__toggle hidden-on-desktop" type="button">
+    <nav class="navigation">
+      <button class="navigation__toggle hidden-on-desktop hidden-entity" type="button">
 
         <span class="visually-hidden hidden-entity">Кнопка открытия меню навигации</span>
-        <svg class="navigation__toggle-svg navigation__burger-svg " width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="navigation__toggle-svg navigation__burger-svg hidden-entity" width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <use xlink:href="#icon-burger"></use>
         </svg>
 
@@ -26,7 +26,7 @@
         </svg>
       </button>
 
-      <ul class="navigation__list hidden-entity">
+      <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#about" aria-label="Ссылка для перехода к разделу 'О нас'">О нас</a>
         </li>
@@ -46,18 +46,16 @@
       <h1 class="visually-hidden">Велосипеды</h1>
 
       <div class="general-block__wrapper">
+        <a class="general-block__logo">
+          <svg class="general-block__logo-svg" width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
 
+        <p class="general-block__leading-paragraph">Мы продаем велосипеды</p>
+
+       <p class="general-block__explanation">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
-
-      <a class="general-block__logo">
-        <svg class="general-block__logo-svg" width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </a>
-
-      <p class="general-block__leading-paragraph">Мы продаем велосипеды</p>
-
-      <p class="general-block__explanation">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
 
       <form action="" method="POST" autocomplete="off">
         <div class="general-block__form-content-box">
@@ -120,7 +118,7 @@
       </symbol>
 
       <symbol id="icon-burger" viewBox="0 0 30 30">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black"></path>
+        <path class="" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black"></path>
       </symbol>
 
       <symbol id="icon-cross" viewBox="0 0 24 25">

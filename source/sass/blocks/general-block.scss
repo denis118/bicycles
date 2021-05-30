@@ -1,6 +1,5 @@
 .general-block {
   background-color: $dcg-2;
-  background-repeat: no-repeat;
   letter-spacing: inherit;
 
   @media (min-width: $desktop-width) {
@@ -9,6 +8,7 @@
     grid-auto-rows: min-content;
 
     background-image: $general-bg-large;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -24,18 +24,9 @@
 
   @media (max-width: $pre-desktop-width) {
     @include column-flex;
-    @include centering-padding(94.53125%);
-    min-height: 100%;
-    padding-top: 25px;
-
+    padding: 0;
     background-color: $lcg-1;
-    background-image: $general-bg-medium;
-    background-position: center top;
-    background-size: 100%;
-
-    @media (min-resolution: 2dppx) {
-      background-image: $general-bg-medium-2x;
-    }
+    background-image: none;
   }
 
   form {
@@ -43,13 +34,13 @@
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
-      grid-row-end: 4;
-
+      grid-row-end: 2;
       justify-self: end;
     }
 
     @media (max-width: $pre-desktop-width) {
-      width: 45.095%;
+      width: 42.6294%;
+      max-width: 321px;
     }
 
     @media (max-width: $pre-tablet-width) {
@@ -79,25 +70,71 @@
     }
 
     @media (max-width: $pre-tablet-width) {
-      padding: 13px 19px 11px 26px;
+      padding: 8px 19px 11px 17px;
     }
 
     @include button-hover-focus;
+
+    &:active {
+      color: $lcg-1;
+    }
+  }
+}
+
+.general-block__wrapper {
+  @media (max-width: $pre-desktop-width) {
+    @include column-flex;
+    @include centering-padding(94.53125%);
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 81px;
+    margin-bottom: 70px;
+
+    background-color: $lcg-4;
+    background-image: $general-bg-medium;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $general-bg-medium-2x;
+    }
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    padding-top: 23px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 71px;
+    margin-bottom: 70px;
+    background-image: $general-bg-small;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $general-bg-small-2x;
+    }
+  }
+
+  p {
+    @media (max-width: $pre-tablet-width) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
 .general-block__logo {
   @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    display: block;
     margin-bottom: 20px;
   }
 
   @media (max-width: $pre-desktop-width) {
     align-self: flex-start;
-    margin-bottom: 88.72px;
+    margin-bottom: 76px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    margin-bottom: 64px;
   }
 }
 
@@ -108,11 +145,6 @@
   color: $lcg-1;
 
   @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
     font-size: 46px;
     line-height: 64px;
     margin-bottom: 24px;
@@ -122,6 +154,7 @@
     font-size: 30px;
     line-height: 42px;
     margin-bottom: 20px;
+    transform: translateX(5px);
   }
 }
 
@@ -134,11 +167,6 @@
   opacity: 0.8;
 
   @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-
     font-size: 20px;
     width: 80%;
   }
@@ -146,7 +174,6 @@
   @media (max-width: $pre-desktop-width) {
     font-size: 18px;
     width: 60%;
-    margin-bottom: 150px;
     text-align: center;
   }
 }
@@ -156,10 +183,6 @@
 
   @media (min-width: $desktop-width) {
     width: 327px;
-  }
-
-  & > :not(:last-child) {
-    margin-bottom: 19px;
   }
 
   input,
@@ -176,16 +199,12 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
     justify-self: end;
-
     font-size: 17px;
     color: $lcg-1;
     width: 327px;
     padding-top: 5px;
+    margin-bottom: 21px;
   }
 
   @media (max-width: $pre-desktop-width) {
@@ -193,12 +212,24 @@
   }
 
   @media (max-width: $pre-desktop-width) and (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
 .general-block__input-wrapper {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    margin-bottom: 18px;
+  }
 
   label {
     @include visually-hidden;
@@ -212,7 +243,7 @@
     border: 1px solid $lcg-3;
 
     @media (min-width: $desktop-width) {
-      padding: 14px 29px 10px;
+      padding: 14px 29px 8px;
     }
 
     @media (max-width: $pre-desktop-width) {
