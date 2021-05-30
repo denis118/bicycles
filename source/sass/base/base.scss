@@ -54,3 +54,7 @@ button {
 .visually-hidden {
   @include visually-hidden;
 }
+
+.modal-open {
+  overflow: hidden;
+}
