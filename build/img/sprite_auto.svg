@@ -11,9 +11,9 @@
 <path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"/>
 <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"/>
 <rect x="37" y="3" width="6" height="4" fill="#0AD9C6"/>
-</symbol><symbol id="icon-ellipse" viewBox="0 0 95 95">
+</symbol><symbol id="ellipse-decor" viewBox="0 0 95 95">
 <circle cx="47.5" cy="47.5" r="39" stroke="#0AD9C6" stroke-width="17"/>
-</symbol><symbol id="icon-rectangle" viewBox="0 0 47 47">
+</symbol><symbol id="rectangle-decor" viewBox="0 0 47 47">
 <rect x="4" y="4" width="39" height="39" stroke="#0AD9C6" stroke-width="8"/>
 </symbol><symbol id="icon-arrow-right" viewBox="0 0 8 12">
 <g clip-path="url(#clip0)">

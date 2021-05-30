@@ -5,14 +5,30 @@ $tablet-width: 768px;
 $pre-tablet-width: 767px;
 $mobile-width: 320px;
 
-// body width limits
-$body-max-width: 1440px;
-$body-min-width: $mobile-width;
+// width limit
+$content-max-width: 1440px;
 
 // lcg (light colors' group)
 $lcg-1: #ffffff;
+$lcg-2: rgba(255, 255, 255, 0.2);
+$lcg-3: #c9ccd4;
 
 // mcg (middle colors' group)
+$mcg-1: #0ad9c6;
+$mcg-2: #7beee2;
 
 // dcg (dark colors' group)
-$dsg-1: #000000;
+$dcg-1: #000000;
+$dcg-2: #1c1c1c;
+$dcg-3: #0e0e0e;
+
+// bg
+// general-block
+$general-bg-large: url("../img/bg/general-bg-large.jpg");
+$general-bg-large-2x: url("../img/bg/general-bg-large@2x.jpg");
+
+$general-bg-medium: url("../img/bg/general-bg-medium@2x.jpg");
+$general-bg-medium-2x: url("../img/bg/general-bg-medium@2x.jpg");
+
+$general-bg-small: url("../img/bg/general-bg-small@2x.jpg");
+$general-bg-small-2x: url("../img/bg/general-bg-small@2x.jpg");

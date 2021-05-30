@@ -4,10 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src:
-    local("OpenSans"),
-    local("opensans-regular"),
-    url("../fonts/openSans-regular.woff2") format("woff2"),
-    url("../fonts/openSans-regular.woff") format("woff");
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -17,10 +15,8 @@
   font-style: normal;
   font-weight: 300;
   src:
-    local("OpenSans"),
-    local("opensans-light"),
-    url("../fonts/openSans-light.woff2") format("woff2"),
-    url("../fonts/openSans-light.woff") format("woff");
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
   font-display: swap;
 }
 
@@ -30,10 +26,8 @@
   font-style: normal;
   font-weight: 600;
   src:
-    local("OpenSans"),
-    local("opensans-semibold"),
-    url("../fonts/openSans-semiBold.woff2") format("woff2"),
-    url("../fonts/openSans-semiBold.woff") format("woff");
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-display: swap;
 }
 
@@ -43,9 +37,7 @@
   font-style: normal;
   font-weight: 700;
   src:
-    local("OpenSans"),
-    local("opensans-bold"),
-    url("../fonts/openSans-bold.woff2") format("woff2"),
-    url("../fonts/openSans-bold.woff") format("woff");
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
   font-display: swap;
 }

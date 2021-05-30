@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-    <link rel="preload"
-      href="./fonts/openSans-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin>
-    <link rel="preload"
-      href="./fonts/openSans-regular.woff"
-      as="font"
-      type="font/woff"
-      crossorigin>
-    <link rel="stylesheet"
-      href="./css/style.min.css">
-    <title>Велосипеды</title>
-  </head>
+
+<head>
+  <meta
+    charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <link
+    rel="preload"
+    href="./fonts/OpenSans-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin>
+  <link
+    rel="preload"
+    href="./fonts/OpenSans-Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin>
+  <link
+    rel="stylesheet"
+    href="./css/style.min.css">
+  <title>Велосипеды</title>
+</head>
+
 <body>
   <header>
     <nav
@@ -53,7 +60,174 @@
             aria-label="Ссылка для перехода к разделу 'Контакты'">Контакты</a>
         </li>
       </ul>
+
+      <button
+        class="navigation__toggle hidden-on-desktop hidden-entity"
+        type="button">
+
+        <span
+          class="visually-hidden hidden-entity">Кнопка открытия меню навигации</span>
+        <svg
+          class="navigation__toggle-svg navigation__burger-svg hidden-entity"
+          width="30"
+          height="30"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <use xlink:href="#icon-burger"></use>
+        </svg>
+
+        <span
+          class="visually-hidden hidden-entity">Кнопка закрытия меню навигации</span>
+        <svg
+          class="navigation__toggle-svg navigation__cross-svg hidden-entity"
+          width="24"
+          height="25"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          id="cross-in-nav-svg">
+          <use xlink:href="#icon-cross"></use>
+        </svg>
+      </button>
     </nav>
+
+    <section
+      class="general-block">
+      <h1
+        class="visually-hidden">Велосипеды</h1>
+
+      <a
+        class="general-block__logo">
+        <svg
+          class="general-block__logo-svg"
+          width="68"
+          height="21"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          role="img"
+          aria-label="Логотип сайта">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+
+      <p
+        class="general-block__leading-paragraph">Мы продаем велосипеды</p>
+
+      <p
+        class="general-block__explanation">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+
+      <form
+        action=""
+        method="POST"
+        autocomplete="off">
+        <div
+          class="general-block__form-content-box">
+          <p
+            class="general-block__proposition">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+
+          <div
+            class="general-block__input-wrapper">
+            <label
+              for="name">Ваше имя</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Введите Ваше Имя">
+          </div>
+
+          <div
+            class="general-block__input-wrapper">
+            <label
+              for="phone">Ваш номер телефона</label>
+            <input
+              type="text"
+              name="telephone"
+              id="phone"
+              placeholder="Введите Ваш номер телефона">
+          </div>
+
+          <button
+            type="submit"><span>Подобрать велосипед мечты</span></button>
+
+        </div>
+
+
+      </form>
+    </section>
   </header>
+
+  <main></main>
+
+  <footer></footer>
+
+  <div
+    class="sprite"
+    style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <clipPath id="clip0">
+          <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)" />
+        </clipPath>
+      </defs>
+
+      <symbol id="logo" viewBox="0 0 68 21">
+        <path
+          d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z"
+          fill="#0AD9C6" />
+        <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6" />
+        <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6" />
+        <path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6" />
+        <path
+          d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6" />
+        <path
+          d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6" />
+        <path
+          d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z"
+          fill="#0AD9C6" />
+        <rect x="37" y="3" width="6" height="4" fill="#0AD9C6" />
+      </symbol>
+
+      <symbol id="ellipse-decor" viewBox="0 0 95 95">
+        <circle cx="47.5" cy="47.5" r="39" stroke="#0AD9C6" stroke-width="17" />
+      </symbol>
+
+      <symbol id="rectangle-decor" viewBox="0 0 47 47">
+        <rect x="4" y="4" width="39" height="39" stroke="#0AD9C6" stroke-width="8" />
+      </symbol>
+
+      <symbol id="icon-arrow-right" viewBox="0 0 8 12">
+        <g clip-path="url(#clip0)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5" />
+        </g>
+      </symbol>
+
+      <symbol id="icon-burger" viewBox="0 0 30 30">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black" />
+      </symbol>
+
+      <symbol id="icon-cross" viewBox="0 0 24 25">
+        <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </symbol>
+
+      <symbol id="icon-mail" viewBox="0 0 26 20">
+        <path
+          d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z"
+          fill="#0AD9C6" />
+      </symbol>
+
+      <symbol id="icon-phone" viewBox="0 0 22 24">
+        <path
+          d="M3.45641 6.62432C3.37185 5.42623 3.63759 4.24606 4.3412 3.29684C4.9512 2.43632 5.74541 1.96636 6.70269 1.69172C7.50898 1.4525 8.03745 1.74561 8.26998 2.64204C8.60217 3.98224 9.07628 5.3225 9.24841 6.73361C9.30277 7.35485 8.90114 8.23322 8.46629 8.6856C7.37614 9.75888 7.60263 10.5399 8.43006 12.1643C8.68675 12.6881 9.09442 13.5934 9.88864 14.7919C10.7161 15.9992 11.1539 16.6472 12.2169 16.0975C13.3977 15.5035 14.2583 15.8855 15.1492 16.8444C15.7531 17.5369 16.4175 18.1318 17.0215 18.8243C17.8942 19.8542 17.8549 20.5641 17.1725 21.2915C15.9434 22.6309 13.9141 23.0736 12.4042 22.1766C11.5707 21.6881 10.7402 21.0487 10.0789 20.303C7.16477 16.9825 5.06297 13.1212 3.79765 8.76321C3.59532 8.02654 3.50171 7.28104 3.45641 6.62432Z"
+          stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10" />
+      </symbol>
+
+      <symbol id="icon-play" viewBox="0 0 14 19">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.600098 0.399902L13.6001 9.4999L0.600098 18.5999V0.399902Z" fill="#070707" />
+      </symbol>
+    </svg>
+  </div>
 </body>
+
 </html>

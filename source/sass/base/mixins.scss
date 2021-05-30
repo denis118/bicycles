@@ -5,6 +5,33 @@
 
 //-------------------------------
 
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin zero-edges {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin centering-margin {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin centering-padding($contentwidth) {
+  padding: 0 calc(50% - #{$contentwidth} / 2);
+}
+
 @mixin column-flex {
   display: flex;
   flex-direction: column;

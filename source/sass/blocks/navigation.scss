@@ -1,1 +1,54 @@
-// navigation.scss
+.navigation {
+  position: absolute;
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 50%;
+    width: 60.6597%;
+    max-width: 873.5px;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border-bottom: 1px solid $lcg-2;
+  }
+}
+
+.navigation__list {
+  @include zero-edges;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 21px 9px 19px;
+  }
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      margin-right: auto;
+    }
+  }
+}
+
+.navigation__link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+
+  font-weight: 300;
+  letter-spacing: inherit;
+
+  @media (min-width: $desktop-width) {
+    color: $lcg-1;
+    opacity: 0.7;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $desktop-width) {
+      opacity: 1;
+    }
+  }
+}

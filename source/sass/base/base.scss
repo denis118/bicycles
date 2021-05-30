@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  @include zero-edges;
+
   font-family:
     "OpenSans",
     "Arial",
@@ -25,5 +27,26 @@ body {
     min-content;
 
   min-height: 100vh;
+  min-width: $mobile-width;
   background-color: $lcg-1;
+  color: $dcg-1;
+}
+
+header {
+  background-color: $dcg-3;
+  letter-spacing: -0.005em;
+}
+
+header > *,
+main > *,
+footer > * {
+  max-width: $content-max-width;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  @include visually-hidden;
 }

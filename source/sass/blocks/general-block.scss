@@ -1,1 +1,203 @@
-// general-block.scss
+.general-block {
+  background-color: $dcg-2;
+  letter-spacing: inherit;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+
+    background-image: $general-bg-large;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $general-bg-large-2x;
+    }
+
+    @include centering-margin;
+    @include centering-padding(61.1111%);
+    padding-top: 316px;
+    padding-bottom: 240px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    @include column-flex;
+    background-image: $general-bg-medium;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $general-bg-medium-2x;
+    }
+  }
+
+  form {
+    @media (min-width: $desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4;
+
+      justify-self: end;
+    }
+  }
+
+  button[type="submit"] {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    min-height: 51px;
+    border: none;
+    background-color: $mcg-1;
+
+    @media (min-width: $desktop-width) {
+      width: 325px;
+      padding: 2px 47px 1px 48px;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      padding: 12px 21px;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      padding: 13px 19px 11px 26px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $mcg-2;
+    }
+  }
+}
+
+.general-block__logo {
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    margin-bottom: 20px;
+  }
+}
+
+.general-block__leading-paragraph {
+  @include zero-edges;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: $lcg-1;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    font-size: 46px;
+    line-height: 64px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    font-size: 30;
+    line-height: 42px;
+  }
+}
+
+.general-block__explanation {
+  @include zero-edges;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: inherit;
+  color: $lcg-1;
+  opacity: 0.8;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    font-size: 20px;
+    width: 80%;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.general-block__form-content-box {
+  @include column-flex;
+
+  @media (min-width: $desktop-width) {
+    width: 327px;
+  }
+
+  & > :not(:last-child) {
+    margin-bottom: 19px;
+  }
+
+  input,
+  button[type="submit"] {
+    border-radius: 6px;
+  }
+}
+
+.general-block__proposition {
+  @include zero-edges;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: inherit;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: end;
+
+    font-size: 17px;
+    color: $lcg-1;
+    width: 327px;
+    padding-top: 5px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $pre-desktop-width) and (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.general-block__input-wrapper {
+  width: 100%;
+
+  label {
+    @include visually-hidden;
+  }
+
+  input {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: normal;
+    width: 100%;
+    border: 1px solid $lcg-3;
+
+    @media (min-width: $desktop-width) {
+      padding: 14px 29px 10px;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      padding: 12px 21px;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      padding: 13px 19px 11px 26px;
+    }
+  }
+}
