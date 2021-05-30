@@ -8,24 +8,55 @@
   <link rel="preload" href="./fonts/OpenSans-Regular.woff" as="font" type="font/woff" crossorigin="">
   <link rel="stylesheet" href="./css/style.min.css">
   <title>Велосипеды</title>
+  <style>
+    main > * {
+      min-height: 500px;
+    }
+
+    main > :nth-child(1) {
+      background-color: slateblue;
+    }
+
+    main > :nth-child(2) {
+      background-color: green;
+    }
+
+    main > :nth-child(3) {
+      background-color: gold;
+    }
+
+    main > :nth-child(4) {
+      background-color: salmon;
+    }
+  </style>
 </head>
 
+<!-- .modal-open -->
 <body>
   <header>
+    <!-- .navigation--js -->
+    <!-- .navigation--opened -->
     <nav class="navigation">
+      <!--.hidden-entity -->
+      <!-- .navigation__toggle--cross -->
       <button class="navigation__toggle hidden-on-desktop hidden-entity" type="button">
 
+        <!-- .hidden-entity -->
         <span class="navigation__button-description navigation__burger-description visually-hidden hidden-entity">Кнопка открытия меню навигации</span>
+        <!-- .hidden-entity -->
         <svg class="navigation__toggle-svg navigation__burger-svg hidden-entity" width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <use xlink:href="#icon-burger"></use>
         </svg>
 
+        <!-- .hidden-entity -->
         <span class="navigation__button-description navigation__cross-description visually-hidden hidden-entity">Кнопка закрытия меню навигации</span>
+        <!-- .hidden-entity -->
         <svg class="navigation__toggle-svg navigation__cross-svg hidden-entity" width="24" height="25" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" id="cross-in-nav-svg">
           <use xlink:href="#icon-cross"></use>
         </svg>
       </button>
 
+      <!-- .hidden-entity -->
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#about" aria-label="Ссылка для перехода к разделу 'О нас'">О нас</a>
@@ -68,7 +99,7 @@
 
           <div class="general-block__input-wrapper">
             <label for="phone">Ваш номер телефона</label>
-            <input type="text" name="telephone" id="phone" placeholder="Введите Ваш номер телефона">
+            <input type="tel" name="telephone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{1,}">
           </div>
 
           <button type="submit"><span>Подобрать велосипед мечты</span></button>
@@ -80,7 +111,12 @@
     </section>
   </header>
 
-  <main></main>
+  <main>
+    <section id="about"></section>
+    <section id="types"></section>
+    <section id="video"></section>
+    <section id="contacts"></section>
+  </main>
 
   <footer></footer>
 
