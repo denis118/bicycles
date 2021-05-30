@@ -1,5 +1,6 @@
 'use strict';
 
+// Показ и скрытие навигации
 (function () {
   var DESKTOP_WIDTH = 1024;
   var viewPort = document.documentElement.clientWidth;
