@@ -128,9 +128,9 @@
     };
   }
 
-  Window.navigationSwitching = {
+  window.navigationSwitching = {
     desktopWidth: DESKTOP_WIDTH,
-    hideNavigation: onToggleClick
+    closeNavigation: onToggleClick
   };
 })();
 
@@ -185,8 +185,8 @@
 
       if (aim) {
         if (document.documentElement.clientWidth
-            < Window.navigationSwitching.desktopWidth) {
-          Window.navigationSwitching.hideNavigation();
+            < window.navigationSwitching.desktopWidth) {
+          window.navigationSwitching.closeNavigation();
         }
 
         aim.scrollIntoView({

@@ -1,3 +1,16 @@
+@mixin link-base-style {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  letter-spacing: inherit;
+}
+
+@mixin background-properties {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 @mixin visually-hidden {
   position: absolute;
   clip: rect(0, 0, 0, 0);

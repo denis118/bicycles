@@ -63,15 +63,12 @@
 
   @media (max-width: $pre-desktop-width) {
     margin-right: 0;
-    background-color: $dcg-5;
+    background-color: $lcg-5;
   }
 }
 
 .navigation__link {
-  display: block;
-  position: relative;
-  text-decoration: none;
-  letter-spacing: inherit;
+  @include link-base-style;
 
   @media (min-width: $desktop-width) {
     font-weight: 300;
@@ -94,14 +91,12 @@
 
   &::after {
     @media (max-width: $pre-desktop-width) {
+      @include background-properties;
       content: "";
       display: block;
       width: 8px;
       height: 12px;
       background-image: $arrow-right;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
     }
   }
 

@@ -1,1 +1,106 @@
-// contacts.scss
+.contacts {
+  font-size: inherit;
+  font-weight: inherit;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    @include centering-padding(66.4583%);
+    padding-top: 248px;
+    padding-bottom: 93px;
+  }
+
+  & > :nth-child(2n+1) {
+    margin-right: 90px;
+  }
+}
+
+.contacts__question {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: $dcg-5;
+
+  @include centering-margin;
+  margin-top: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__address {
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: 400;
+  font-style: normal;
+  color: $dcg-6;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.contacts__element.growed-unit {
+  @include centering-margin;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 58%;
+  }
+}
+
+.contacts__map {
+  @include background-properties;
+  background-color: $lcg-6;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    background-image: $map-bg-large;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $map-bg-large-2x;
+    }
+  }
+
+  @media (min-width: $pre-desktop-width) {
+    background-image: $map-bg-medium;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $map-bg-medium-2x;
+    }
+  }
+
+  @media (min-width: $pre-tablet-width) {
+    background-image: $map-bg-small;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $map-bg-small-2x;
+    }
+  }
+}
+
+.contacts__link {
+  @include link-base-style;
+  font-size: inherit;
+  line-height: 22px;
+  font-weight: inherit;
+  color: $dcg-7;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-8px);
+  }
+
+  svg {
+    fill: none;
+    margin-right: 15px;
+  }
+}

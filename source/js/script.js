@@ -128,7 +128,7 @@
     };
   }
 
-  Window.navigationSwitching = {
+  window.navigationSwitching = {
     desktopWidth: DESKTOP_WIDTH,
     closeNavigation: onToggleClick
   };
@@ -185,8 +185,8 @@
 
       if (aim) {
         if (document.documentElement.clientWidth
-            < Window.navigationSwitching.desktopWidth) {
-          Window.navigationSwitching.closeNavigation();
+            < window.navigationSwitching.desktopWidth) {
+          window.navigationSwitching.closeNavigation();
         }
 
         aim.scrollIntoView({
