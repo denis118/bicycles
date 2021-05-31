@@ -9,11 +9,31 @@
   @media (min-width: $desktop-width) {
     @include centering-padding(66.4583%);
     padding-top: 248px;
-    padding-bottom: 93px;
+    padding-bottom: 76px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    @include centering-padding(90.8854%);
+    padding-top: 155px;
+    padding-bottom: 31px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    @include centering-padding(99.375%);
+    padding-top: 119px;
+    padding-bottom: 31px;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   & > :nth-child(2n+1) {
     margin-right: 90px;
+
+    @media (max-width: $pre-tablet-width) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -30,6 +50,15 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
   }
+
+  @media (max-width: $pre-desktop-width) {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .contacts__address {
@@ -42,6 +71,14 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
   }
+
+  @media (max-width: $pre-desktop-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__element.growed-unit {
@@ -50,6 +87,14 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 58%;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    flex-basis: 90.4%;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    flex-basis: 80.6%;
   }
 }
 
@@ -67,7 +112,9 @@
     }
   }
 
-  @media (min-width: $pre-desktop-width) {
+  @media (max-width: $pre-desktop-width) {
+    height: 545px;
+    margin-bottom: 21px;
     background-image: $map-bg-medium;
 
     @media (min-resolution: 2dppx) {
@@ -75,7 +122,9 @@
     }
   }
 
-  @media (min-width: $pre-tablet-width) {
+  @media (max-width: $pre-tablet-width) {
+    height: 250px;
+    margin-bottom: 25px;
     background-image: $map-bg-small;
 
     @media (min-resolution: 2dppx) {
@@ -93,10 +142,14 @@
 
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 22px;
 
   @media (min-width: $desktop-width) {
     transform: translateX(-8px);
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    transform: translateX(-6px);
   }
 
   svg {
@@ -122,5 +175,11 @@
     svg {
       --icon-color: #{$mcg-3};
     }
+  }
+}
+
+.contacts__mail {
+  @media (max-width: $pre-tablet-width) {
+    transform: translateX(5px);
   }
 }
