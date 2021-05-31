@@ -100,7 +100,27 @@
   }
 
   svg {
+    --icon-color: #{$mcg-1};
+
     fill: none;
     margin-right: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $dcg-1;
+    text-decoration: underline;
+
+    svg {
+      --icon-color: #{$mcg-4};
+    }
+  }
+
+  &:active {
+    color: $mcg-3;
+
+    svg {
+      --icon-color: #{$mcg-3};
+    }
   }
 }
