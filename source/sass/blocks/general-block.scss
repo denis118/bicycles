@@ -34,6 +34,7 @@
       grid-row-start: 1;
       grid-row-end: 2;
       justify-self: end;
+      margin-left: 10%;
     }
 
     @media (max-width: $pre-desktop-width) {
@@ -250,6 +251,27 @@
 
     @media (max-width: $pre-tablet-width) {
       padding: 13px 19px 11px 26px;
+    }
+
+    &:hover,
+    &:focus {
+      @media (min-width: $desktop-width) {
+        box-shadow: 0 0 10px $lcg-1;
+      }
+
+      @media (max-width: $pre-desktop-width) {
+        border-color: $dcg-1;
+      }
+    }
+
+    &:active {
+      @media (min-width: $desktop-width) {
+        box-shadow: 0 0 10px $mcg-1;
+      }
+
+      @media (max-width: $pre-desktop-width) {
+        box-shadow: 0 0 10px $dcg-1;
+      }
     }
   }
 }

@@ -130,5 +130,19 @@
     }
   }
 
+  .navigation__cross-svg {
+    --icon-color: #{$dcg-8};
+  }
+
   @include button-hover-focus;
+
+  &:active {
+    .navigation__burger-svg {
+      --icon-color: #{$lcg-1};
+    }
+
+    .navigation__cross-svg {
+      --icon-color: #{$mcg-5};
+    }
+  }
 }

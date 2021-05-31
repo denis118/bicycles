@@ -30,10 +30,6 @@ body {
   min-width: $mobile-width;
   background-color: $lcg-1;
   color: $dcg-1;
-
-  &--freezed {
-    overflow: hidden;
-  }
 }
 
 header {
