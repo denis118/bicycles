@@ -36,9 +36,6 @@
 }
 
 .about__list {
-  @include zero-edges;
-  list-style: none;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-auto-rows: min-content;

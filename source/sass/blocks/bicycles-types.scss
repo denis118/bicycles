@@ -1,1 +1,101 @@
-// bicycles-types.scss
+.types {
+  @media (min-width: $desktop-width) {
+    @include centering-padding(78.1944%);
+    padding-top: 149px;
+    padding-bottom: 109px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    @include centering-padding(76.8229%);
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    @include centering-padding(84.375%);
+    padding-top: 48px;
+    padding-bottom: 22px;
+  }
+}
+
+.types__heading {
+  @include zero-edges;
+  @include common-text-style-kit;
+  @include heading-text-style-kit;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.types__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.types__item {
+  @media (min-width: $desktop-width) {
+    width: 30.373%;
+    margin-bottom: 30px;
+  }
+
+  &:not(:nth-child(3n+3)) {
+    @media (min-width: $desktop-width) {
+      margin-right: 4.4405%;
+    }
+  }
+
+  &:nth-child(3n+2) {
+    @media (min-width: $desktop-width) {
+      transform: translateY(29px);
+    }
+  }
+}
+
+.types__image-box {
+  margin-bottom: 20px;
+}
+
+.types__padded-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: $ratio-large;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    padding-bottom: $ratio-medium;
+  }
+}
+
+.types__figure {
+  margin: 0;
+}
+
+.types__bicycle-image {
+  display: block;
+}
+
+.types__image-in-padded-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.types__figcaption {
+  @include content-text-style-kit;
+  font-weight: 600;
+}

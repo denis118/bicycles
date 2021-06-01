@@ -54,3 +54,8 @@ button {
 .modal-open {
   overflow: hidden;
 }
+
+.list {
+  @include zero-edges;
+  list-style: none;
+}

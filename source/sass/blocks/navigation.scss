@@ -35,11 +35,9 @@
 }
 
 .navigation__list {
-  @include zero-edges;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  list-style: none;
 
   @media (min-width: $desktop-width) {
     padding: 21px 21px 9px 19px;
