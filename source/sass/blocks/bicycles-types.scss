@@ -1,20 +1,27 @@
 .types {
+  @include background-properties;
+  background-color: $lcg-7;
+  background-image: $ellipse-bg;
+
   @media (min-width: $desktop-width) {
     @include centering-padding(78.1944%);
     padding-top: 149px;
-    padding-bottom: 109px;
+    padding-bottom: 150px;
+    background-size: 180px 180px;
+    background-position: 7.7% 46.2%;
   }
 
   @media (max-width: $pre-desktop-width) {
     @include centering-padding(76.8229%);
     padding-top: 50px;
-    padding-bottom: 40px;
+    background-size: 127px 127px;
+    background-position: 8.05% 39.2%;
   }
 
   @media (max-width: $pre-tablet-width) {
     @include centering-padding(84.375%);
-    padding-top: 48px;
-    padding-bottom: 22px;
+    padding-top: 51px;
+    background-position: 0 27.1%;
   }
 }
 
@@ -36,6 +43,15 @@
 .types__list {
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $pre-desktop-width) {
+    justify-content: center;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .types__item {
@@ -44,37 +60,143 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: $pre-desktop-width) {
+    width: 45.7627%;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .types__padded-box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: $ratio-large;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      padding-bottom: $ratio-medium;
+    }
+  }
+
+  &:nth-child(3n+1) {
+    .types__padded-box {
+      @media (min-width: $desktop-width) {
+        padding-bottom: $ratio-large;
+      }
+    }
+  }
+
+  &:nth-child(3n+2) {
+    @media (min-width: $desktop-width) {
+      position: relative;
+      transform: translateY(29px);
+    }
+
+    &::before,
+    &::after {
+      @media (min-width: $desktop-width) {
+        @include pseudo-properties;
+        width: 47px;
+        height: 47px;
+
+        @include background-properties;
+        background-image: $rectangle-decor;
+      }
+    }
+
+    &::before {
+      @media (min-width: $desktop-width) {
+        top: 0;
+        left: 0;
+        transform: translate(-40%, -36%);
+      }
+    }
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        top: 100%;
+        left: 100%;
+        transform: translate(-52%, -163%);
+      }
+    }
+
+    .types__padded-box {
+      @media (min-width: $desktop-width) {
+        padding-bottom: $ratio-great;
+      }
+    }
+  }
+
+  &:nth-child(3n+3) {
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+      transform: translateY(-10px);
+    }
+
+    &::after {
+      @include pseudo-properties;
+        width: 95px;
+        height: 95px;
+        top: 0;
+        left: 100%;
+        transform: translate(-62%, -33%);
+
+        @include background-properties;
+        background-image: $ellipse-decor;
+
+        @media (max-width: $pre-desktop-width) {
+          width: 68px;
+          height: 68px;
+          transform: translate(-64%, -30%);
+        }
+
+        @media (max-width: $pre-tablet-width) {
+          transform: translate(-79%, -30%);
+        }
+    }
+
+    .types__padded-box {
+      @media (min-width: $desktop-width) {
+        padding-bottom: $ratio-big;
+      }
+    }
+  }
+
   &:not(:nth-child(3n+3)) {
     @media (min-width: $desktop-width) {
       margin-right: 4.4405%;
     }
   }
 
-  &:nth-child(3n+2) {
-    @media (min-width: $desktop-width) {
-      transform: translateY(29px);
+  &:nth-child(2n+1) {
+    @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+      margin-right: 8.474576%;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $pre-desktop-width) {
+      margin-right: 0;
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      margin-bottom: 55px;
     }
   }
 }
 
 .types__image-box {
   margin-bottom: 20px;
-}
-
-.types__padded-box {
-  position: relative;
-  width: 100%;
-  height: 0;
-  border-radius: 10px;
-  overflow: hidden;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: $ratio-large;
-  }
-
-  @media (max-width: $pre-desktop-width) {
-    padding-bottom: $ratio-medium;
-  }
 }
 
 .types__figure {

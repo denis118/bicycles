@@ -15,6 +15,7 @@ $lcg-3: #c9ccd4;
 $lcg-4: #272727;
 $lcg-5: #f6f6f6;
 $lcg-6: #e6e6e6;
+$lcg-7: #f6f7f9;
 
 // mcg (middle colors' group)
 $mcg-1: #0ad9c6;
@@ -34,6 +35,8 @@ $dcg-7: rgba(0, 0, 0, 0.5);
 $dcg-8: #141517;
 
 // ratio
+$ratio-great: 165.497076%;
+$ratio-big: 149.880117%;
 $ratio-large: 147.076023%;
 $ratio-medium: 111.111111%;
 
@@ -54,6 +57,10 @@ $general-bg-medium-2x: url("../img/bg/general-bg-medium@2x.jpg");
 $general-bg-small: url("../img/bg/general-bg-small@2x.jpg");
 $general-bg-small-2x: url("../img/bg/general-bg-small@2x.jpg");
 
+// bicycle-types
+$ellipse-bg: url("../img/bg/ellipse-bg.svg");
+$rectangle-decor: url("../img/decor/rectangle-decor.svg");
+$ellipse-decor: url("../img/decor/ellipse-decor.svg");
 
 // map
 $map-bg-large: url("../img/bg/map-bg-large.jpg");
