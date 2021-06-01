@@ -4,19 +4,19 @@
   @media (min-width: $desktop-width) {
     @include centering-padding(80.9722%);
     padding-top: 150px;
-    padding-bottom: 130px;
+    padding-bottom: 151px;
   }
 
   @media (max-width: $pre-desktop-width) {
     @include centering-padding(72.3958%);
-    padding-top: 35px;
-    padding-bottom: 70px;
+    padding-top: 36px;
+    padding-bottom: 69px;
   }
 
   @media (max-width: $pre-tablet-width) {
     @include centering-padding(90.625%);
     padding-top: 35px;
-    padding-bottom: 70px;
+    padding-bottom: 78px;
   }
 }
 
@@ -50,7 +50,7 @@
     row-gap: 50px;
   }
 
-  @media (max-width: $pre-desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5.3957%;
     row-gap: 40px;
@@ -68,12 +68,30 @@
 
   @media (max-width: $pre-tablet-width) {
     font-size: 18px;
-    flex-basis: 90.6897%;
+    width: 90.6897%;
   }
 
-  &:not(:last-child) {
+  &:not(:first-child) {
     @media (max-width: $pre-tablet-width) {
-      margin-bottom: 35px;
+      margin-bottom: 45px;
+    }
+
+    &::before {
+      @media (max-width: $pre-tablet-width) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  &:first-child {
+    @media (max-width: $pre-tablet-width) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $pre-tablet-width) {
+      margin-bottom: 0;
     }
   }
 
@@ -87,6 +105,11 @@
 
     display: block;
     width: 100%;
-    height: 60px;
+    height: min-content;
+    margin-bottom: 15px;
+
+    @media (max-width: $pre-desktop-width) {
+      margin-bottom: 17px;
+    }
   }
 }
