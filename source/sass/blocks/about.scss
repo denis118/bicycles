@@ -1,1 +1,92 @@
-// about.scss
+.about {
+  font-weight: inherit;
+
+  @media (min-width: $desktop-width) {
+    @include centering-padding(80.9722%);
+    padding-top: 150px;
+    padding-bottom: 130px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    @include centering-padding(72.3958%);
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    @include centering-padding(90.625%);
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+}
+
+.about__heading {
+  @include zero-edges;
+  @include common-text-style-kit;
+  @include heading-text-style-kit;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.about__list {
+  @include zero-edges;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-auto-rows: min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3.259%;
+    row-gap: 50px;
+  }
+
+  @media (max-width: $pre-desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5.3957%;
+    row-gap: 40px;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    @include column-flex;
+  }
+}
+
+.about__item {
+  @include column-flex;
+  @include content-text-style-kit;
+  font-weight: inherit;
+
+  @media (max-width: $pre-tablet-width) {
+    font-size: 18px;
+    flex-basis: 90.6897%;
+  }
+
+  &:not(:last-child) {
+    @media (max-width: $pre-tablet-width) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &::before {
+    content: attr(data-number);
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    color: $mcg-1;
+    letter-spacing: -1.27273px;
+
+    display: block;
+    width: 100%;
+    height: 60px;
+  }
+}

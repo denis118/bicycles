@@ -38,12 +38,7 @@
 }
 
 .contacts__question {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  color: $dcg-5;
-
+  @include common-text-style-kit;
   @include centering-margin;
   margin-top: 0;
 
