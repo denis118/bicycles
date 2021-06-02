@@ -8,6 +8,10 @@ $mobile-width: 320px;
 // width limit
 $content-max-width: 1440px;
 
+//
+// colors
+//
+
 // lcg (light colors' group)
 $lcg-1: #ffffff;
 $lcg-2: rgba(255, 255, 255, 0.2);
@@ -33,12 +37,23 @@ $dcg-5: #1f1f1f;
 $dcg-6: rgba(0, 0, 0, 0.7);
 $dcg-7: rgba(0, 0, 0, 0.5);
 $dcg-8: #141517;
+$dcg-9: #131314;
+$dcg-10: #070707;
 
+//
 // ratio
+//
+
+// images
 $ratio-great: 165.497076%;
 $ratio-big: 149.880117%;
 $ratio-large: 147.076023%;
 $ratio-medium: 111.111111%;
+
+// video
+$ratio-huge: 56.189451%;
+$ratio-middle: 56.063618%;
+$ratio-little: 56.141944%;
 
 //
 // backgrounds

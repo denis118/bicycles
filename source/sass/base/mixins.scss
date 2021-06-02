@@ -44,6 +44,13 @@
   padding: 0 calc(50% - #{$contentwidth} / 2);
 }
 
+@mixin absolute-centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin column-flex {
   display: flex;
   flex-direction: column;
@@ -59,28 +66,6 @@
 @mixin centering-grid {
   display: grid;
   place-items: center;
-}
-
-@mixin all-columns {
-  grid-column-start: 1;
-  grid-column-end: -1;
-}
-
-@mixin one-track {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 1;
-  grid-row-end: -1;
-}
-
-@mixin shift-to-left($value) {
-  margin-left: $value;
-  margin-right: 0;
-}
-
-@mixin shift-to-right($value) {
-  margin-right: $value;
-  margin-left: 0;
 }
 
 @mixin button-hover-focus {
@@ -120,4 +105,21 @@
   text-align: center;
   letter-spacing: -0.5px;
   color: $dcg-1;
+}
+
+@mixin padded-box($width: 100%) {
+  position: relative;
+  width: $width;
+  height: 0;
+  overflow: hidden;
+}
+
+@mixin content-in-padded-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }

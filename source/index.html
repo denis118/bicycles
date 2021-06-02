@@ -161,7 +161,8 @@
           </div>
 
           <button
-            type="submit"><span>Подобрать велосипед мечты</span></button>
+            type="submit"
+            aria-label="Кнопка отправки параметров для подбора велосипеда"><span>Подобрать велосипед мечты</span></button>
 
         </div>
       </form>
@@ -227,7 +228,7 @@
                     ./img/content/andreas-haimerl-large.webp    1x,
                     ./img/content/andreas-haimerl-large@2x.webp 2x
                   " />
-                <img class="types__bicycle-image types__image-in-padded-box"
+                <img class="types__bicycle-image types__image-in-padded-box image"
                   src="./img/content/andreas-haimerl-large.jpg"
                   width="342"
                   height="503"
@@ -269,7 +270,7 @@
                     ./img/content/eberhard-grossgasteiger-large.webp    1x,
                     ./img/content/eberhard-grossgasteiger-large@2x.webp 2x
                   " />
-                <img class="types__bicycle-image types__image-in-padded-box"
+                <img class="types__bicycle-image types__image-in-padded-box image"
                   src="./img/content/eberhard-grossgasteiger-large.jpg"
                   width="342"
                   height="566"
@@ -311,7 +312,7 @@
                     ./img/content/roger-goh-large.webp    1x,
                     ./img/content/roger-goh-large@2x.webp 2x
                   " />
-                <img class="types__bicycle-image types__image-in-padded-box"
+                <img class="types__bicycle-image types__image-in-padded-box image"
                   src="./img/content/roger-goh-large.jpg"
                   width="342"
                   height="513"
@@ -327,6 +328,78 @@
           </figure>
         </li>
       </ul>
+    </section>
+
+    <section
+      class="video"
+      id="video">
+      <div
+        class="video__container">
+        <h2
+        class="video__heading video__text">Видео про велосипеды</h2>
+
+        <p
+          class="video__preface video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для   себя. </p>
+
+        <figure
+          class="video__figure video__padded-box">
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767px)"
+              srcset="
+                ./img/content/josh-nuttall-small.webp    1x,
+                ./img/content/josh-nuttall-small@2x.webp 2x
+              " />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/content/josh-nuttall-small.jpg    1x,
+                ./img/content/josh-nuttall-small@2x.jpg 2x
+              " />
+            <source
+              type="image/webp"
+              media="(max-width: 1023px)"
+              srcset="
+                ./img/content/josh-nuttall-medium.webp    1x,
+                ./img/content/josh-nuttall-medium@2x.webp 2x
+              " />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                ./img/content/josh-nuttall-medium.jpg    1x,
+                ./img/content/josh-nuttall-medium@2x.jpg 2x
+              " />
+            <source
+              type="image/webp"
+              srcset="
+                ./img/content/josh-nuttall-large.webp    1x,
+                ./img/content/josh-nuttall-large@2x.webp 2x
+              " />
+            <img class="video__bicycle-poster video__image-in-padded-box image"
+              src="./img/content/josh-nuttall-large.jpg"
+              width="929"
+              height="522"
+              alt="Постер для видео о велосипедах"
+              srcset="
+                ./img/content/josh-nuttall-large@2x.jpg 2x
+              " />
+          </picture>
+
+          <button
+            class="video__play-button"
+            type="button"
+            aria-label="Кнопка запуска видео о велосипедах">
+            <svg
+              width="14"
+              height="19"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
+        </figure>
+      </div>
     </section>
   </main>
 
@@ -379,23 +452,12 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink">
-      <!-- <symbol
-        id="icon-burger"
-        viewBox="0 0 30 30">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black"/>
-      </symbol> -->
 
       <symbol
         id="icon-burger"
         viewBox="0 0 30 30">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="var(--icon-color)"/>
       </symbol>
-
-      <!-- <symbol
-        id="icon-cross"
-        viewBox="0 0 24 25">
-        <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol> -->
 
       <symbol
         id="icon-cross"
@@ -418,7 +480,7 @@
       <symbol
         id="icon-play"
         viewBox="0 0 14 19">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.600098 0.399902L13.6001 9.4999L0.600098 18.5999V0.399902Z" fill="#070707"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.600098 0.399902L13.6001 9.4999L0.600098 18.5999V0.399902Z" fill="var(--icon-color)"/>
       </symbol>
 
       <symbol
