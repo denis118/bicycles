@@ -104,17 +104,120 @@
 
       <h2 class="types__heading">Виды велосипедов</h2>
 
+      <!-- <ul
+        class="types__list list">
+        <li
+          class="types__item">
+          <figure
+            class="types__figure">
+            <div
+              class="types__image-box types__padded-box">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/content/andreas-haimerl.webp    1x,
+                    ./img/content/andreas-haimerl@2x.webp 2x
+                  " />
+                <img
+                  class="types__bicycle-image types__image-in-padded-box"
+                  src="./img/content/andreas-haimerl.png"
+                  width="342"
+                  height="503"
+                  alt="Велосипед Andreas Haimerl"
+                  srcset="
+                    ./img/content/andreas-haimerl@2x.png 2x
+                  " />
+              </picture>
+            </div>
+
+            <figcaption
+              class="types__figcaption">Дорожный велосипед</figcaption>
+          </figure>
+        </li>
+
+        <li
+          class="types__item">
+          <figure
+            class="types__figure">
+            <div
+              class="types__image-box types__padded-box">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/content/eberhard-grossgasteiger.webp    1x,
+                    ./img/content/eberhard-grossgasteiger@2x.webp 2x
+                  " />
+                <img
+                  class="types__bicycle-image types__image-in-padded-box"
+                  src="./img/content/eberhard-grossgasteiger.png"
+                  width="342"
+                  height="503"
+                  alt="Велосипед Eberhard Grossgasteiger"
+                  srcset="
+                    ./img/content/eberhard-grossgasteiger@2x.png 2x
+                  " />
+              </picture>
+            </div>
+
+            <figcaption
+              class="types__figcaption">Горный велосипед</figcaption>
+          </figure>
+        </li>
+
+        <li
+          class="types__item">
+          <figure
+            class="types__figure">
+            <div
+              class="types__image-box types__padded-box">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/content/roger-goh.webp    1x,
+                    ./img/content/roger-goh@2x.webp 2x
+                  " />
+                <img
+                  class="types__bicycle-image types__image-in-padded-box"
+                  src="./img/content/roger-goh.png"
+                  width="342"
+                  height="503"
+                  alt="Велосипед Roger Goh"
+                  srcset="
+                    ./img/content/roger-goh@2x.png 2x
+                  " />
+              </picture>
+            </div>
+
+            <figcaption
+              class="types__figcaption">Детский велосипед</figcaption>
+          </figure>
+        </li>
+      </ul> -->
+
+      <!-- /////////////////////////////////////////////////////////////////////////// -->
+
       <ul class="types__list list">
         <li class="types__item">
           <figure class="types__figure">
             <div class="types__image-box types__padded-box">
               <picture>
-                <source type="image/webp" srcset="
-                    ./img/content/andreas-haimerl.webp    1x,
-                    ./img/content/andreas-haimerl@2x.webp 2x
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    ./img/content/andreas-haimerl-medium.webp    1x,
+                    ./img/content/andreas-haimerl-medium@2x.webp 2x
                   ">
-                <img class="types__bicycle-image types__image-in-padded-box" src="./img/content/andreas-haimerl.png" width="342" height="503" alt="Велосипед Andreas Haimerl" srcset="
-                    ./img/content/andreas-haimerl@2x.png 2x
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/content/andreas-haimerl-medium.jpg    1x,
+                    ./img/content/andreas-haimerl-medium@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/content/andreas-haimerl-large.webp    1x,
+                    ./img/content/andreas-haimerl-large@2x.webp 2x
+                  ">
+                <img class="types__bicycle-image types__image-in-padded-box" src="./img/content/andreas-haimerl-large.jpg" width="342" height="503" alt="Велосипед Andreas Haimerl" srcset="
+                    ./img/content/andreas-haimerl-large@2x.jpg 2x
                   ">
               </picture>
             </div>
@@ -127,12 +230,20 @@
           <figure class="types__figure">
             <div class="types__image-box types__padded-box">
               <picture>
-                <source type="image/webp" srcset="
-                    ./img/content/eberhard-grossgasteiger.webp    1x,
-                    ./img/content/eberhard-grossgasteiger@2x.webp 2x
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    ./img/content/eberhard-grossgasteiger-medium.webp    1x,
+                    ./img/content/eberhard-grossgasteiger-medium@2x.webp 2x
                   ">
-                <img class="types__bicycle-image types__image-in-padded-box" src="./img/content/eberhard-grossgasteiger.png" width="342" height="503" alt="Велосипед Eberhard Grossgasteiger" srcset="
-                    ./img/content/eberhard-grossgasteiger@2x.png 2x
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/content/eberhard-grossgasteiger-medium.jpg    1x,
+                    ./img/content/eberhard-grossgasteiger-medium@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/content/eberhard-grossgasteiger-large.webp    1x,
+                    ./img/content/eberhard-grossgasteiger-large@2x.webp 2x
+                  ">
+                <img class="types__bicycle-image types__image-in-padded-box" src="./img/content/eberhard-grossgasteiger-large.jpg" width="342" height="566" alt="Велосипед Eberhard Grossgasteiger" srcset="
+                    ./img/content/eberhard-grossgasteiger-large@2x.jpg 2x
                   ">
               </picture>
             </div>
@@ -145,12 +256,20 @@
           <figure class="types__figure">
             <div class="types__image-box types__padded-box">
               <picture>
-                <source type="image/webp" srcset="
-                    ./img/content/roger-goh.webp    1x,
-                    ./img/content/roger-goh@2x.webp 2x
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    ./img/content/roger-goh-medium.webp    1x,
+                    ./img/content/roger-goh-medium@2x.webp 2x
                   ">
-                <img class="types__bicycle-image types__image-in-padded-box" src="./img/content/roger-goh.png" width="342" height="503" alt="Велосипед Roger Goh" srcset="
-                    ./img/content/roger-goh@2x.png 2x
+                <source media="(max-width: 1023px)" srcset="
+                    ./img/content/roger-goh-medium.jpg    1x,
+                    ./img/content/roger-goh-medium@2x.jpg 2x
+                  ">
+                <source type="image/webp" srcset="
+                    ./img/content/roger-goh-large.webp    1x,
+                    ./img/content/roger-goh-large@2x.webp 2x
+                  ">
+                <img class="types__bicycle-image types__image-in-padded-box" src="./img/content/roger-goh-large.jpg" width="342" height="513" alt="Велосипед Roger Goh" srcset="
+                    ./img/content/roger-goh-large@2x.jpg 2x
                   ">
               </picture>
             </div>
@@ -159,6 +278,128 @@
           </figure>
         </li>
       </ul>
+
+      <!-- /////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- <ul
+        class="types__list list">
+        <li
+          class="types__item">
+          <figure
+            class="types__figure">
+            <picture>
+              <source
+                type="image/webp"
+                media="(max-width: 1023px)"
+                srcset="
+                  ./img/content/andreas-haimerl-medium.webp    1x,
+                  ./img/content/andreas-haimerl-medium@2x.webp 2x
+                " />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./img/content/andreas-haimerl-medium.jpg    1x,
+                  ./img/content/andreas-haimerl-medium@2x.jpg 2x
+                " />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/content/andreas-haimerl-large.webp    1x,
+                  ./img/content/andreas-haimerl-large@2x.webp 2x
+                " />
+              <img class="types__bicycle-image"
+                src="./img/content/andreas-haimerl-large.jpg"
+                width="342"
+                height="503"
+                alt="Велосипед Andreas Haimerl"
+                srcset="
+                  ./img/content/andreas-haimerl-large@2x.jpg 2x
+                " />
+            </picture>
+
+          <figcaption
+              class="types__figcaption">Дорожный велосипед</figcaption>
+          </figure>
+        </li>
+
+        <li
+          class="types__item">
+          <figure
+            class="types__figure">
+            <picture>
+              <source
+                type="image/webp"
+                media="(max-width: 1023px)"
+                srcset="
+                  ./img/content/eberhard-grossgasteiger-medium.webp    1x,
+                  ./img/content/eberhard-grossgasteiger-medium@2x.webp 2x
+                " />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./img/content/eberhard-grossgasteiger-medium.jpg    1x,
+                  ./img/content/eberhard-grossgasteiger-medium@2x.jpg 2x
+                " />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/content/eberhard-grossgasteiger-large.webp    1x,
+                  ./img/content/eberhard-grossgasteiger-large@2x.webp 2x
+                " />
+              <img class="types__bicycle-image"
+                src="./img/content/eberhard-grossgasteiger-large.jpg"
+                width="342"
+                height="566"
+                alt="Велосипед Eberhard Grossgasteiger"
+                srcset="
+                  ./img/content/eberhard-grossgasteiger-large@2x.jpg 2x
+                " />
+            </picture>
+
+            <figcaption
+              class="types__figcaption">Горный велосипед</figcaption>
+          </figure>
+        </li>
+
+        <li
+          class="types__item">
+          <figure
+            class="types__figure">
+            <picture>
+              <source
+                type="image/webp"
+                media="(max-width: 1023px)"
+                srcset="
+                  ./img/content/roger-goh-medium.webp    1x,
+                  ./img/content/roger-goh-medium@2x.webp 2x
+                " />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./img/content/roger-goh-medium.jpg    1x,
+                  ./img/content/roger-goh-medium@2x.jpg 2x
+                " />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/content/roger-goh-large.webp    1x,
+                  ./img/content/roger-goh-large@2x.webp 2x
+                " />
+              <img class="types__bicycle-image"
+                src="./img/content/roger-goh-large.jpg"
+                width="342"
+                height="513"
+                alt="Велосипед Roger Goh"
+                srcset="
+                  ./img/content/roger-goh-large@2x.jpg 2x
+                " />
+            </picture>
+
+            <figcaption
+              class="types__figcaption">Детский велосипед</figcaption>
+          </figure>
+        </li>
+      </ul> -->
 
     </section>
   </main>

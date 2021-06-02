@@ -144,24 +144,24 @@
 
     &::after {
       @include pseudo-properties;
-        width: 95px;
-        height: 95px;
-        top: 0;
-        left: 100%;
-        transform: translate(-62%, -33%);
+      width: 95px;
+      height: 95px;
+      top: 0;
+      left: 100%;
+      transform: translate(-62%, -33%);
 
-        @include background-properties;
-        background-image: $ellipse-decor;
+      @include background-properties;
+      background-image: $ellipse-decor;
 
-        @media (max-width: $pre-desktop-width) {
-          width: 68px;
-          height: 68px;
-          transform: translate(-64%, -30%);
-        }
+      @media (max-width: $pre-desktop-width) {
+        width: 68px;
+        height: 68px;
+        transform: translate(-64%, -30%);
+      }
 
-        @media (max-width: $pre-tablet-width) {
-          transform: translate(-79%, -30%);
-        }
+      @media (max-width: $pre-tablet-width) {
+        transform: translate(-79%, -30%);
+      }
     }
 
     .types__padded-box {
