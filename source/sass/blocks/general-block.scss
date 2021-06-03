@@ -3,10 +3,6 @@
   letter-spacing: inherit;
 
   @media (min-width: $desktop-width) {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-auto-rows: min-content;
-
     @include background-properties;
     background-image: $general-bg-large;
 
@@ -15,13 +11,11 @@
     }
 
     @include centering-margin;
-    // @include centering-padding(61.1111%);
     padding-top: 316px;
     padding-bottom: 240px;
   }
 
   @media (max-width: $pre-desktop-width) {
-    // @include column-flex;
     padding: 0;
     background-color: $lcg-1;
     background-image: none;
@@ -102,7 +96,6 @@
 .general-block__wrapper {
   @media (max-width: $pre-desktop-width) {
     @include column-flex;
-    // @include centering-padding(94.53125%);
     width: 100%;
     padding-left: 2.734375%;
     padding-right: 2.734375%;

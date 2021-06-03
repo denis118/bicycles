@@ -2,39 +2,20 @@
   font-size: inherit;
   font-weight: inherit;
 
-  // display: flex;
-  // justify-content: center;
-  // flex-wrap: wrap;
-
   @media (min-width: $desktop-width) {
-    // @include centering-padding(66.4583%);
     padding-top: 248px;
     padding-bottom: 76px;
   }
 
   @media (max-width: $pre-desktop-width) {
-    // @include centering-padding(90.8854%);
     padding-top: 155px;
     padding-bottom: 31px;
   }
 
   @media (max-width: $pre-tablet-width) {
-    // @include centering-padding(99.375%);
     padding-top: 119px;
     padding-bottom: 31px;
-
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: center;
   }
-
-  // & > :nth-child(2n+1) {
-  //   margin-right: 90px;
-
-  //   @media (max-width: $pre-tablet-width) {
-  //     margin-right: 0;
-  //   }
-  // }
 
   .container {
     display: flex;

@@ -40,10 +40,6 @@
   margin-left: auto;
 }
 
-@mixin centering-padding($contentwidth) {
-  padding: 0 calc(50% - #{$contentwidth} / 2);
-}
-
 @mixin absolute-centering {
   position: absolute;
   top: 50%;
