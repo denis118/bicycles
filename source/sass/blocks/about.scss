@@ -30,20 +30,20 @@
       width: 90.625%;
     }
   }
-}
 
-.about__heading {
-  @include zero-edges;
-  @include common-text-style-kit;
-  @include heading-text-style-kit;
-  text-align: center;
+  h2 {
+    @include zero-edges;
+    @include common-text-style-kit;
+    @include heading-text-style-kit;
+    text-align: center;
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
-  }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+    }
 
-  @media (max-width: $pre-desktop-width) {
-    margin-bottom: 30px;
+    @media (max-width: $pre-desktop-width) {
+      margin-bottom: 30px;
+    }
   }
 }
 

@@ -38,24 +38,46 @@
       width: 99.375%;
     }
   }
-}
 
-.contacts__question {
-  @include common-text-style-kit;
-  @include centering-margin;
-  margin-top: 0;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+  h2 {
+    @include visually-hidden;
   }
 
-  @media (max-width: $pre-desktop-width) {
-    font-size: 24px;
-    margin-bottom: 20px;
+  p {
+    @include common-text-style-kit;
+    @include centering-margin;
+    margin-top: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      font-size: 18px;
+    }
   }
 
-  @media (max-width: $pre-tablet-width) {
-    font-size: 18px;
+  p,
+  address {
+    @include centering-margin;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 58%;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      flex-basis: 90.4%;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      flex-basis: 80.6%;
+    }
   }
 }
 
@@ -76,23 +98,6 @@
 
   @media (max-width: $pre-tablet-width) {
     margin-bottom: 25px;
-  }
-}
-
-.contacts__element {
-  @include centering-margin;
-  text-align: center;
-
-  @media (min-width: $desktop-width) {
-    flex-basis: 58%;
-  }
-
-  @media (max-width: $pre-desktop-width) {
-    flex-basis: 90.4%;
-  }
-
-  @media (max-width: $pre-tablet-width) {
-    flex-basis: 80.6%;
   }
 }
 

@@ -37,14 +37,14 @@ header {
   letter-spacing: -0.005em;
 }
 
-// header > *,
-// main > *,
-// footer > * {
-//   max-width: $content-max-width;
-// }
-
 button {
   cursor: pointer;
+}
+
+figure {
+  img {
+    display: block;
+  }
 }
 
 .container {
@@ -63,8 +63,4 @@ button {
 .list {
   @include zero-edges;
   list-style: none;
-}
-
-.image {
-  display: block;
 }

@@ -55,23 +55,27 @@
 
     <section class="general-block">
       <div class="container">
-        <h1 class="visually-hidden">Велосипеды</h1>
+        <h1>Велосипеды</h1>
 
         <div class="general-block__wrapper">
           <a class="general-block__logo">
-            <svg class="general-block__logo-svg" width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
+            <svg width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
               <use xlink:href="#logo"></use>
             </svg>
           </a>
 
-          <p class="general-block__leading-paragraph">Мы продаем велосипеды</p>
+          <div class="general-block__leading-paragraph-box">
+            <p>Мы продаем велосипеды</p>
+          </div>
 
-          <p class="general-block__explanation">Наш магазин отбирает только самые лучшие велосипеды для  продажи</p>
+          <div class="general-block__explanation-box">
+            <p>Наш магазин отбирает только самые лучшие велосипеды для  продажи</p>
+          </div>
         </div>
 
         <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
           <div class="general-block__form-content-box">
-            <p class="general-block__proposition">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
 
             <div class="general-block__input-wrapper">
               <label for="name">Ваше имя</label>
@@ -94,7 +98,7 @@
   <main>
     <section class="about" id="about">
       <div class="container">
-        <h2 class="about__heading">Несколько фактов о нас</h2>
+        <h2>Несколько фактов о нас</h2>
 
         <ul class="about__list list">
           <li class="about__item" data-number="01">Самый широкий выбор велосипедов!</li>
@@ -107,7 +111,7 @@
 
     <section class="types" id="types">
       <div class="container">
-        <h2 class="types__heading">Виды велосипедов</h2>
+        <h2>Виды велосипедов</h2>
 
         <ul class="types__list list">
           <li class="types__item">
@@ -126,7 +130,7 @@
                       ./img/content/andreas-haimerl-large.webp    1x,
                       ./img/content/andreas-haimerl-large@2x.webp 2x
                     ">
-                  <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/andreas-haimerl-large.jpg" width="342" height="503" alt="Велосипед Andreas Haimerl" srcset="
+                  <img src="./img/content/andreas-haimerl-large.jpg" width="342" height="503" alt="Велосипед Andreas Haimerl" srcset="
                       ./img/content/andreas-haimerl-large@2x.jpg 2x
                     ">
                 </picture>
@@ -152,7 +156,7 @@
                       ./img/content/eberhard-grossgasteiger-large.webp    1x,
                       ./img/content/eberhard-grossgasteiger-large@2x.webp 2x
                     ">
-                  <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/eberhard-grossgasteiger-large.jpg" width="342" height="566" alt="Велосипед Eberhard Grossgasteiger" srcset="
+                  <img src="./img/content/eberhard-grossgasteiger-large.jpg" width="342" height="566" alt="Велосипед Eberhard Grossgasteiger" srcset="
                       ./img/content/eberhard-grossgasteiger-large@2x.jpg 2x
                     ">
                 </picture>
@@ -178,7 +182,7 @@
                       ./img/content/roger-goh-large.webp    1x,
                       ./img/content/roger-goh-large@2x.webp 2x
                     ">
-                  <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/roger-goh-large.jpg" width="342" height="513" alt="Велосипед Roger Goh" srcset="
+                  <img src="./img/content/roger-goh-large.jpg" width="342" height="513" alt="Велосипед Roger Goh" srcset="
                       ./img/content/roger-goh-large@2x.jpg 2x
                     ">
                 </picture>
@@ -193,9 +197,9 @@
 
     <section class="video" id="video">
       <div class="container">
-        <h2 class="video__heading video__text">Видео про велосипеды</h2>
+        <h2>Видео про велосипеды</h2>
 
-        <p class="video__preface video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для   себя. </p>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для   себя. </p>
 
         <figure class="video__figure video__padded-box">
           <picture>
@@ -219,7 +223,7 @@
                 ./img/content/josh-nuttall-large.webp    1x,
                 ./img/content/josh-nuttall-large@2x.webp 2x
               ">
-            <img class="video__bicycle-poster video__image-in-padded-box image" src="./img/content/josh-nuttall-large.jpg" width="929" height="522" alt="Постер для видео о велосипедах" srcset="
+            <img src="./img/content/josh-nuttall-large.jpg" width="929" height="522" alt="Постер для видео о велосипедах" srcset="
                 ./img/content/josh-nuttall-large@2x.jpg 2x
               ">
           </picture>
@@ -237,11 +241,11 @@
   <footer>
     <section class="contacts" id="contacts">
       <div class="container">
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2>Контакты</h2>
 
-        <p class="contacts__question contacts__element growed-unit">Как нас найти?</p>
+        <p>Как нас найти?</p>
 
-        <address class="contacts__address contacts__element growed-unit">Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</address>
+        <address class="contacts__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</address>
 
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5957033608138!2d30.323437349753384!3d59.93885061240575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622475570280!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
