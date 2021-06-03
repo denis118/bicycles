@@ -27,8 +27,16 @@
     return Boolean(item) === true;
   });
 
-  switchOnJsMode();
   var onToggleClick = createHandler();
+
+  window.addEventListener('load', function () {
+    viewPort = document.documentElement.clientWidth;
+
+    if (isEveryItemExisting && viewPort < DESKTOP_WIDTH) {
+      hideNavigation();
+      toggle.addEventListener('click', onToggleClick);
+    }
+  });
 
   window.addEventListener('resize', function () {
     viewPort = document.documentElement.clientWidth;
@@ -43,13 +51,6 @@
       toggle.removeEventListener('click', onToggleClick, false);
     }
   });
-
-  function switchOnJsMode() {
-    if (isEveryItemExisting && viewPort < DESKTOP_WIDTH) {
-      hideNavigation();
-      toggle.addEventListener('click', onToggleClick);
-    }
-  }
 
   function hideNavigation() {
     navigation.classList.add('navigation--js');
