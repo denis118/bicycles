@@ -4,7 +4,7 @@
   background-image: $ellipse-bg;
 
   @media (min-width: $desktop-width) {
-    @include centering-padding(78.1944%);
+    // @include centering-padding(78.1944%);
     padding-top: 149px;
     padding-bottom: 150px;
     background-size: 180px 180px;
@@ -12,16 +12,31 @@
   }
 
   @media (max-width: $pre-desktop-width) {
-    @include centering-padding(76.8229%);
+    // @include centering-padding(76.8229%);
     padding-top: 50px;
     background-size: 127px 127px;
     background-position: 8.05% 39.2%;
   }
 
   @media (max-width: $pre-tablet-width) {
-    @include centering-padding(84.375%);
+    // @include centering-padding(84.375%);
     padding-top: 51px;
     background-position: 0 27.1%;
+  }
+
+  .container {
+    @media (min-width: $desktop-width) {
+      width: 78.1944%;
+      max-width: 1126px;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      width: 76.8229%;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      width: 84.375%;
+    }
   }
 }
 

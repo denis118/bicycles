@@ -54,140 +54,145 @@
     </nav>
 
     <section class="general-block">
-      <h1 class="visually-hidden">Велосипеды</h1>
+      <div class="container">
+        <h1 class="visually-hidden">Велосипеды</h1>
 
-      <div class="general-block__wrapper">
-        <a class="general-block__logo">
-          <svg class="general-block__logo-svg" width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
-            <use xlink:href="#logo"></use>
-          </svg>
-        </a>
+        <div class="general-block__wrapper">
+          <a class="general-block__logo">
+            <svg class="general-block__logo-svg" width="68" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип сайта">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
 
-        <p class="general-block__leading-paragraph">Мы продаем велосипеды</p>
+          <p class="general-block__leading-paragraph">Мы продаем велосипеды</p>
 
-        <p class="general-block__explanation">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      </div>
-
-      <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
-        <div class="general-block__form-content-box">
-          <p class="general-block__proposition">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-
-          <div class="general-block__input-wrapper">
-            <label for="name">Ваше имя</label>
-            <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
-          </div>
-
-          <div class="general-block__input-wrapper">
-            <label for="phone">Ваш номер телефона</label>
-            <input type="tel" name="telephone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{1,}">
-          </div>
-
-          <button type="submit" aria-label="Кнопка отправки параметров для подбора велосипеда"><span>Подобрать велосипед мечты</span></button>
-
+          <p class="general-block__explanation">Наш магазин отбирает только самые лучшие велосипеды для  продажи</p>
         </div>
-      </form>
+
+        <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+          <div class="general-block__form-content-box">
+            <p class="general-block__proposition">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+
+            <div class="general-block__input-wrapper">
+              <label for="name">Ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+            </div>
+
+            <div class="general-block__input-wrapper">
+              <label for="phone">Ваш номер телефона</label>
+              <input type="tel" name="telephone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{1,}">
+            </div>
+
+            <button type="submit" aria-label="Кнопка отправки параметров для подбора велосипеда"><span>Подобрать велосипед  мечты</span></button>
+
+          </div>
+        </form>
+      </div>
     </section>
   </header>
 
   <main>
     <section class="about" id="about">
-      <h2 class="about__heading">Несколько фактов о нас</h2>
+      <div class="container">
+        <h2 class="about__heading">Несколько фактов о нас</h2>
 
-      <ul class="about__list list">
-        <li class="about__item" data-number="01">Самый широкий выбор велосипедов!</li>
-        <li class="about__item" data-number="02">Доставка велосипедов по всей России!</li>
-        <li class="about__item" data-number="03">Большой выбор крутых аксессуаров!</li>
-        <li class="about__item" data-number="04">Профессиональные консультации!</li>
-      </ul>
+        <ul class="about__list list">
+          <li class="about__item" data-number="01">Самый широкий выбор велосипедов!</li>
+          <li class="about__item" data-number="02">Доставка велосипедов по всей России!</li>
+          <li class="about__item" data-number="03">Большой выбор крутых аксессуаров!</li>
+          <li class="about__item" data-number="04">Профессиональные консультации!</li>
+        </ul>
+      </div>
     </section>
 
     <section class="types" id="types">
+      <div class="container">
+        <h2 class="types__heading">Виды велосипедов</h2>
 
-      <h2 class="types__heading">Виды велосипедов</h2>
+        <ul class="types__list list">
+          <li class="types__item">
+            <figure class="types__figure">
+              <div class="types__image-box types__padded-box">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="
+                      ./img/content/andreas-haimerl-medium.webp    1x,
+                      ./img/content/andreas-haimerl-medium@2x.webp 2x
+                    ">
+                  <source media="(max-width: 1023px)" srcset="
+                      ./img/content/andreas-haimerl-medium.jpg    1x,
+                      ./img/content/andreas-haimerl-medium@2x.jpg 2x
+                    ">
+                  <source type="image/webp" srcset="
+                      ./img/content/andreas-haimerl-large.webp    1x,
+                      ./img/content/andreas-haimerl-large@2x.webp 2x
+                    ">
+                  <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/andreas-haimerl-large.jpg" width="342" height="503" alt="Велосипед Andreas Haimerl" srcset="
+                      ./img/content/andreas-haimerl-large@2x.jpg 2x
+                    ">
+                </picture>
+              </div>
 
-      <ul class="types__list list">
-        <li class="types__item">
-          <figure class="types__figure">
-            <div class="types__image-box types__padded-box">
-              <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="
-                    ./img/content/andreas-haimerl-medium.webp    1x,
-                    ./img/content/andreas-haimerl-medium@2x.webp 2x
-                  ">
-                <source media="(max-width: 1023px)" srcset="
-                    ./img/content/andreas-haimerl-medium.jpg    1x,
-                    ./img/content/andreas-haimerl-medium@2x.jpg 2x
-                  ">
-                <source type="image/webp" srcset="
-                    ./img/content/andreas-haimerl-large.webp    1x,
-                    ./img/content/andreas-haimerl-large@2x.webp 2x
-                  ">
-                <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/andreas-haimerl-large.jpg" width="342" height="503" alt="Велосипед Andreas Haimerl" srcset="
-                    ./img/content/andreas-haimerl-large@2x.jpg 2x
-                  ">
-              </picture>
-            </div>
+              <figcaption class="types__figcaption">Дорожный велосипед</figcaption>
+            </figure>
+          </li>
 
-            <figcaption class="types__figcaption">Дорожный велосипед</figcaption>
-          </figure>
-        </li>
+          <li class="types__item">
+            <figure class="types__figure">
+              <div class="types__image-box types__padded-box">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="
+                      ./img/content/eberhard-grossgasteiger-medium.webp    1x,
+                      ./img/content/eberhard-grossgasteiger-medium@2x.webp 2x
+                    ">
+                  <source media="(max-width: 1023px)" srcset="
+                      ./img/content/eberhard-grossgasteiger-medium.jpg    1x,
+                      ./img/content/eberhard-grossgasteiger-medium@2x.jpg 2x
+                    ">
+                  <source type="image/webp" srcset="
+                      ./img/content/eberhard-grossgasteiger-large.webp    1x,
+                      ./img/content/eberhard-grossgasteiger-large@2x.webp 2x
+                    ">
+                  <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/eberhard-grossgasteiger-large.jpg" width="342" height="566" alt="Велосипед Eberhard Grossgasteiger" srcset="
+                      ./img/content/eberhard-grossgasteiger-large@2x.jpg 2x
+                    ">
+                </picture>
+              </div>
 
-        <li class="types__item">
-          <figure class="types__figure">
-            <div class="types__image-box types__padded-box">
-              <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="
-                    ./img/content/eberhard-grossgasteiger-medium.webp    1x,
-                    ./img/content/eberhard-grossgasteiger-medium@2x.webp 2x
-                  ">
-                <source media="(max-width: 1023px)" srcset="
-                    ./img/content/eberhard-grossgasteiger-medium.jpg    1x,
-                    ./img/content/eberhard-grossgasteiger-medium@2x.jpg 2x
-                  ">
-                <source type="image/webp" srcset="
-                    ./img/content/eberhard-grossgasteiger-large.webp    1x,
-                    ./img/content/eberhard-grossgasteiger-large@2x.webp 2x
-                  ">
-                <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/eberhard-grossgasteiger-large.jpg" width="342" height="566" alt="Велосипед Eberhard Grossgasteiger" srcset="
-                    ./img/content/eberhard-grossgasteiger-large@2x.jpg 2x
-                  ">
-              </picture>
-            </div>
+              <figcaption class="types__figcaption">Горный велосипед</figcaption>
+            </figure>
+          </li>
 
-            <figcaption class="types__figcaption">Горный велосипед</figcaption>
-          </figure>
-        </li>
+          <li class="types__item">
+            <figure class="types__figure">
+              <div class="types__image-box types__padded-box">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="
+                      ./img/content/roger-goh-medium.webp    1x,
+                      ./img/content/roger-goh-medium@2x.webp 2x
+                    ">
+                  <source media="(max-width: 1023px)" srcset="
+                      ./img/content/roger-goh-medium.jpg    1x,
+                      ./img/content/roger-goh-medium@2x.jpg 2x
+                    ">
+                  <source type="image/webp" srcset="
+                      ./img/content/roger-goh-large.webp    1x,
+                      ./img/content/roger-goh-large@2x.webp 2x
+                    ">
+                  <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/roger-goh-large.jpg" width="342" height="513" alt="Велосипед Roger Goh" srcset="
+                      ./img/content/roger-goh-large@2x.jpg 2x
+                    ">
+                </picture>
+              </div>
 
-        <li class="types__item">
-          <figure class="types__figure">
-            <div class="types__image-box types__padded-box">
-              <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="
-                    ./img/content/roger-goh-medium.webp    1x,
-                    ./img/content/roger-goh-medium@2x.webp 2x
-                  ">
-                <source media="(max-width: 1023px)" srcset="
-                    ./img/content/roger-goh-medium.jpg    1x,
-                    ./img/content/roger-goh-medium@2x.jpg 2x
-                  ">
-                <source type="image/webp" srcset="
-                    ./img/content/roger-goh-large.webp    1x,
-                    ./img/content/roger-goh-large@2x.webp 2x
-                  ">
-                <img class="types__bicycle-image types__image-in-padded-box image" src="./img/content/roger-goh-large.jpg" width="342" height="513" alt="Велосипед Roger Goh" srcset="
-                    ./img/content/roger-goh-large@2x.jpg 2x
-                  ">
-              </picture>
-            </div>
-
-            <figcaption class="types__figcaption">Детский велосипед</figcaption>
-          </figure>
-        </li>
-      </ul>
+              <figcaption class="types__figcaption">Детский велосипед</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="video" id="video">
-      <div class="video__container">
+      <div class="container">
         <h2 class="video__heading video__text">Видео про велосипеды</h2>
 
         <p class="video__preface video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для   себя. </p>
@@ -231,23 +236,25 @@
 
   <footer>
     <section class="contacts" id="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <div class="container">
+        <h2 class="visually-hidden">Контакты</h2>
 
-      <p class="contacts__question contacts__element growed-unit">Как нас найти?</p>
+        <p class="contacts__question contacts__element growed-unit">Как нас найти?</p>
 
-      <address class="contacts__address contacts__element growed-unit">Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</address>
+        <address class="contacts__address contacts__element growed-unit">Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</address>
 
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5957033608138!2d30.323437349753384!3d59.93885061240575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622475570280!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5957033608138!2d30.323437349753384!3d59.93885061240575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622475570280!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-      <a class="contacts__link contacts__mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="Электронная почта">
-        <svg width="26" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <use xlink:href="#icon-mail"></use>
-        </svg>puteshestviemechta@gmail.ru</a>
+        <a class="contacts__link contacts__mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="Электронная почта">
+          <svg width="26" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <use xlink:href="#icon-mail"></use>
+          </svg>puteshestviemechta@gmail.ru</a>
 
-      <a class="contacts__link contacts__phone" href="tel:+749978468446" aria-label="Контактный телефон">
-        <svg width="22" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <use xlink:href="#icon-phone"></use>
-        </svg>+7 (499) -784-684-46</a>
+        <a class="contacts__link contacts__phone" href="tel:+749978468446" aria-label="Контактный телефон">
+          <svg width="22" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <use xlink:href="#icon-phone"></use>
+          </svg>+7 (499) -784-684-46</a>
+      </div>
     </section>
   </footer>
 

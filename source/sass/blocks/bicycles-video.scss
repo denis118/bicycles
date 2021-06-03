@@ -16,30 +16,31 @@
   @media (max-width: $pre-tablet-width) {
     min-height: 384px;
   }
-}
 
-.video__container {
-  background-color: transparent;
+  .container {
+    background-color: transparent;
 
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: min-content;
-  transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: min-content;
+    transform: translateX(-50%);
 
-  @media (min-width: $desktop-width) {
-    width: 64.5139%;
-    padding-top: 120px;
-  }
+    @media (min-width: $desktop-width) {
+      width: 64.5139%;
+      max-width: 929px;
+      padding-top: 120px;
+    }
 
-  @media (max-width: $pre-desktop-width) {
-    width: 65.4948%;
-    padding-top: 70px;
-  }
+    @media (max-width: $pre-desktop-width) {
+      width: 65.4948%;
+      padding-top: 70px;
+    }
 
-  @media (max-width: $pre-tablet-width) {
-    width: 90%;
-    padding-top: 84px;
+    @media (max-width: $pre-tablet-width) {
+      width: 90%;
+      padding-top: 84px;
+    }
   }
 }
 

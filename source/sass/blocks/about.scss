@@ -2,21 +2,36 @@
   font-weight: inherit;
 
   @media (min-width: $desktop-width) {
-    @include centering-padding(80.9722%);
+    // @include centering-padding(80.9722%);
     padding-top: 150px;
     padding-bottom: 151px;
   }
 
   @media (max-width: $pre-desktop-width) {
-    @include centering-padding(72.3958%);
+    // @include centering-padding(72.3958%);
     padding-top: 36px;
     padding-bottom: 69px;
   }
 
   @media (max-width: $pre-tablet-width) {
-    @include centering-padding(90.625%);
+    // @include centering-padding(90.625%);
     padding-top: 35px;
     padding-bottom: 78px;
+  }
+
+  .container {
+    @media (min-width: $desktop-width) {
+      width: 80.9722%;
+      max-width: 1166px;
+    }
+
+    @media (max-width: $pre-desktop-width) {
+      width: 72.3958%;
+    }
+
+    @media (max-width: $pre-tablet-width) {
+      width: 90.625%;
+    }
   }
 }
 

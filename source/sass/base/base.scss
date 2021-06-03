@@ -37,14 +37,19 @@ header {
   letter-spacing: -0.005em;
 }
 
-header > *,
-main > *,
-footer > * {
-  max-width: $content-max-width;
-}
+// header > *,
+// main > *,
+// footer > * {
+//   max-width: $content-max-width;
+// }
 
 button {
   cursor: pointer;
+}
+
+.container {
+  @include centering-margin;
+  max-width: $content-max-width;
 }
 
 .visually-hidden {
