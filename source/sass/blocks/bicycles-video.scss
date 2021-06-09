@@ -1,4 +1,7 @@
 .video {
+  @include padded-box;
+  overflow: visible;
+
   color: $lcg-1;
   letter-spacing: -0.005em;
   background-color: $dcg-9;
@@ -6,15 +9,15 @@
   position: relative;
 
   @media (min-width: $desktop-width) {
-    min-height: 706px;
+    padding-bottom: $ratio-massive;
   }
 
   @media (max-width: $pre-desktop-width) {
-    min-height: 413px;
+    padding-bottom: $ratio-moderate;
   }
 
   @media (max-width: $pre-tablet-width) {
-    min-height: 384px;
+    padding-bottom: $ratio-cove;
   }
 
   .container {
