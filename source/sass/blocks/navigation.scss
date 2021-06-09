@@ -52,6 +52,7 @@
   &:not(:last-child) {
     @media (min-width: $desktop-width) {
       margin-right: auto;
+      padding-right: 15px;
     }
 
     @media (max-width: $pre-desktop-width) {
