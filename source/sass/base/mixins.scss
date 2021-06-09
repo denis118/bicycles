@@ -11,10 +11,10 @@
   background-size: cover;
 }
 
-@mixin pseudo-properties {
+@mixin pseudo-properties($index: 1) {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: $index;
 }
 
 @mixin visually-hidden {
