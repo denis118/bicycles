@@ -155,6 +155,10 @@
     submitButton.addEventListener('click', function (evt) {
       var value = typeof phoneInput.value === 'string' ? phoneInput.value : String(phoneInput.value);
       var isEveryCharLetter = value.trim().split('').every(function (char) {
+        if (Number(char) === 0) {
+          return true;
+        }
+
         return Boolean(Number(char));
       });
 
