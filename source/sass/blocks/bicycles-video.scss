@@ -121,8 +121,7 @@
   background-color: $mcg-1;
 
   @include absolute-centering;
-  display: grid;
-  place-items: center;
+  @include centering-flex;
   width: 65px;
   height: 65px;
   border: none;
