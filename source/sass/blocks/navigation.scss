@@ -45,6 +45,9 @@
 
   @media (max-width: $pre-desktop-width) {
     flex-direction: column;
+    flex-wrap: nowrap;
+    height: 395px;
+    overflow-y: auto;
   }
 }
 
