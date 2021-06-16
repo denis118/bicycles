@@ -1,34 +1,21 @@
 .video {
-  @include padded-box;
-  overflow: visible;
-
   color: $lcg-1;
   letter-spacing: -0.005em;
   background-color: $dcg-9;
 
-  position: relative;
-
   @media (min-width: $desktop-width) {
-    padding-bottom: $ratio-massive;
+    background-image: linear-gradient(to bottom, $dcg-9 87.7%, $lcg-1 87.7%);
   }
 
   @media (max-width: $pre-desktop-width) {
-    padding-bottom: $ratio-moderate;
+    background-image: linear-gradient(to bottom, $dcg-9 83%, $lcg-1 83%);
   }
 
   @media (max-width: $pre-tablet-width) {
-    padding-bottom: $ratio-cove;
+    background-image: linear-gradient(to bottom, $dcg-9 88.6%, $lcg-1 88.6%);
   }
 
   .container {
-    background-color: transparent;
-
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: min-content;
-    transform: translateX(-50%);
-
     @media (min-width: $desktop-width) {
       width: 64.5139%;
       max-width: 929px;
