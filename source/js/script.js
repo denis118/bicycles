@@ -13,7 +13,7 @@
   var crossSvg = navigation.querySelector('.navigation__cross-svg');
   var navigationList = navigation.querySelector('.navigation__list');
 
-  var flag = false;
+  var isMenuOpen = false;
 
   var checkedItems = [
     navigation,
@@ -38,20 +38,37 @@
     }
   });
 
-  window.addEventListener('resize', function () {
-    viewPort = document.documentElement.clientWidth;
+  var onWindowResize = makeHandler();
+  window.addEventListener('resize', onWindowResize);
 
-    if (isEveryItemExisting && viewPort < DESKTOP_WIDTH) {
-      hideNavigation();
-      flag = false;
-      toggle.addEventListener('click', onToggleClick);
-    }
+  function makeHandler() {
+    var isPreDesktopWidth = false;
 
-    if (isEveryItemExisting && (viewPort > DESKTOP_WIDTH || viewPort === DESKTOP_WIDTH)) {
-      showNavigation();
-      toggle.removeEventListener('click', onToggleClick);
-    }
-  });
+    return function () {
+      viewPort = document.documentElement.clientWidth;
+
+      if (
+        isEveryItemExisting
+        && viewPort < DESKTOP_WIDTH
+        && !isPreDesktopWidth
+      ) {
+        hideNavigation();
+        isMenuOpen = false;
+        isPreDesktopWidth = true;
+        toggle.addEventListener('click', onToggleClick);
+      }
+
+      if (
+        isEveryItemExisting
+        && (viewPort > DESKTOP_WIDTH || viewPort === DESKTOP_WIDTH)
+        && isPreDesktopWidth
+      ) {
+        showNavigation();
+        isPreDesktopWidth = false;
+        toggle.removeEventListener('click', onToggleClick);
+      }
+    };
+  }
 
   function hideNavigation() {
     navigation.classList.add('navigation--js');
@@ -98,7 +115,7 @@
   }
 
   function onToggleClick() {
-    if (!flag) {
+    if (!isMenuOpen) {
       navigation.classList.add('navigation--opened');
       navigationList.classList.remove('hidden-entity');
       toggle.classList.add('navigation__toggle--cross');
@@ -118,7 +135,7 @@
         return item.classList.remove('hidden-entity');
       });
 
-      flag = true;
+      isMenuOpen = true;
     } else {
       navigation.classList.remove('navigation--opened');
       navigationList.classList.add('hidden-entity');
@@ -139,7 +156,7 @@
         return item.classList.add('hidden-entity');
       });
 
-      flag = false;
+      isMenuOpen = false;
     }
   }
 
