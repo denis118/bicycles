@@ -20,15 +20,27 @@
   }
 
   &--js {
-    @include absolute-top-right;
-    width: min-content;
-    height: min-content;
+    @media (max-width: $pre-desktop-width) {
+      @include absolute-top-right;
+      @include column-flex;
+      width: min-content;
+      height: min-content;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .navigation__list {
+      @media (max-width: $pre-desktop-width) {
+        padding-top: 52px;
+        padding-bottom: 138px;
+      }
+    }
   }
 
   &--opened {
     @media (max-width: $pre-desktop-width) {
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
       z-index: 1;
     }
   }
@@ -46,7 +58,8 @@
   @media (max-width: $pre-desktop-width) {
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 395px;
+    width: 100%;
+    height: 100%;
     overflow-y: auto;
   }
 }
@@ -116,7 +129,7 @@
 
 .navigation__toggle {
   @media (max-width: $pre-desktop-width) {
-    @include absolute-top-right;
+    align-self: flex-end;
     margin: 0;
     padding: 10px 10px 6px;
     border: none;
